@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/validacion.js"></script>
+</head>
+<body>
+    <section class="form1">
+        <p>
+            Había una vez un patito que decía miau miau, y este patito quería
+            aprender a utilizar diferentes tipos de formulario
+            <br>
+            Existen dos métodos principales para la obtención de los datos dentro
+            de un formulario web para lo cual aquí lo explicaremos:
+        </p>
+        <h1>GET:</h1> Este método es el estandar como salida del navegador mediante
+        el cual se resuelve una petición del cliente, así mismo en la salida estándar
+        (url), se puede visualizar los datos enviados mediante el formulario.
+        <br>
+        <h1>POST: </h1>Este método es el más utilizado para el envío de información desde
+        un formulario atendiendo una petición por parte del cliente, actuando para 
+        poder agregar o insertar nuevos datos BD, así mismo, a diferencia del método GET 
+        este utiliza "un tipo de seguridad", mediante el cual la información no es visible 
+        por medio de la salida estándar del navegador.
+    <br>
+    </section>
+
+<section class="form">
+    <div class="container">
+        <div class="content-formulario">
+            <form name="formulario" method="get" onsubmit="return validar(formulario)">
+                <br>
+                <div class="nombre">
+                    <label>Nombre: </label>
+                    <br>
+                    <input type="text" name="nombre" id="nombre">
+                    <br>
+                </div>
+                
+                <div class="fecha">
+                    <label>Fecha de nacimiento: </label>
+                    <br>
+                    <input type="date" name="fecha" id="miento" min="1994-01-01" max="2023-12-31">
+                    <br>
+                </div>
+
+                <div class="edad">
+                    <label>Edad: </label>
+                    <br>
+                    <input type="number" name="edad" id="edad" min="01" max="99">
+                    <br>
+                </div>
+                
+                <div class="correo">
+                    <label>Email: </label>
+                    <br>
+                    <input type="email" name="correo" id="correo">
+                    <br>
+                </div>
+                <br>
+                <div class="color">
+                    <label>Ingrese su color favorito por favor: </label> 
+                    <input type="color" name="color" id="colofav">
+                    <br>
+                </div>
+                <br>
+                <div class="buttons">
+                    <input type="submit" name="enviar" value="Enviar Los Datos al registro">
+                    <input type="reset" name="borrar" value="Borrar Datos">
+                </div>
+            </form>
+        </div>
+    </div>  
+</section>
+</body>
+</html>
