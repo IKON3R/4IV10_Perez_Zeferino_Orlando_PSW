@@ -19,5 +19,47 @@
             pagar el cliente por el concepto en producto
         </h4>
     </div>
+    <div class="tabla-container">
+        <form nombre="formulario" method="get"
+        onsubmit="return validar(this)">
+            <br>
+            <label>Nombre del producto: </label>
+            <input type="text" name="nombre"
+            id="nombre" required>
+            <br><br>
+
+            <label>Marca del producto: </label>
+            <input type="text" name="marca" 
+            id="marca" required>
+            <br><br>
+
+            <label>Tipo de producto: </label>
+            <input type="text" name="tipo" 
+            id="tipo" required>
+            <br><br>
+
+            <label>Precio del producto: </label>
+            <input type="number" name="precio"
+            id="precio" min="01" max="999" required>
+            <br><br>
+
+            <input type="button" name="send"  onclick="return cantifinal()"
+            value="Calcular">  
+            <br><br>     
+
+            <td>
+                    Su total a pagar es:
+            </td>
+            <td>
+                <input type="text" name="final" id="cantidad" readonly="readonly" 
+                class="input_text">
+            </td>
+            <br><br>
+
+            <input type="button" name="borrar"
+            value="Borrar Datos" onclick="return borrard()">           
+        </form>
+    </div>
+    <script src="./JS/validacion.js"></script>
 </body>
 </html>

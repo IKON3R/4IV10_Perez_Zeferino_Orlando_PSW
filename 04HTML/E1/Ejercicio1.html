@@ -19,16 +19,29 @@
     </div>
     <br>
     <div class="main1">
-        <form>
+        <form method="get" name="formulario" action="">
             <label><h3>Ingresa la cantidad a invertir</h3></label>
-            <input type="number" name="money" id="money">
+            <input type="number" name="money" id="money" onkeypress="return validarn(event)">
+            <br>
+            <input type="button" name="comenzar" onclick="return inte()" value="Calcular Interes">
             <br>
             <br>
-            <label><h3>Elige los meses</h3></label>
-            <input type="tel" name="meses" id="meses">
+            <label>Su sueldo total con el interes del 8.2% mensual es de:</label>
+            
+            <input type="text" nombre="suelinte" id="cantinte" readonly="readonly" class="input_text">
+            <br>
+            <br>
+            <label>A un maximo de 36 meses el dinero es de: </label>
+            <input type="text" nombre="mesesm" id="maximom" readonly="readonly" class="input_text">
+            <br>
+            <br>
+            <br>
+            <input type="button" nombre="borrar" value="Borrar Datos" onclick="return borrard()"></td>
+            
 
         </form>
     </div>
+    <script src="./JS/validacion.js"></script>
     
 </body>
 </html>

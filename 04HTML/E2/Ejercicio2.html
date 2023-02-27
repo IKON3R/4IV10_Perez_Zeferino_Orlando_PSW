@@ -22,22 +22,34 @@
         </h4>
     </div>
     <div>
-        <form>
-            <label><h3>Venta 1 sin decimales (TT)</h3></label>
-            <input name="V1" type="number">
+        <form method="get" name="formulario" action="">
+            <label><h3>Ingresos de Venta 1 sin decimales (TT)</h3></label>
+            <input name="V1" type="number" id="V1">
             <br>
-            <label><h3>Venta 2 sin decimales (TT)</h3></label>
-            <input name="V2" type="number">
+            <label><h3>Ingresos de Venta 2 sin decimales (TT)</h3></label>
+            <input name="V2" type="number" id="V2">
             <br>
-            <label><h3>Venta 3 sin decimales (TT)</h3></label>
-            <input name="V3" type="number">
+            <label><h3>Ingresos de Venta 3 sin decimales (TT)</h3></label>
+            <input name="V3" type="number" id="V3">
             <br>
-            <label><h3>Venta 4 sin decimales (TT)</h3></label>
-            <input name="V4" type="number">
+            <label><h3>Ingresos de Venta 4 sin decimales (TT)</h3></label>
+            <input name="V4" type="number" id="V4">
             <br>
-            <label><h3>Venta 5 sin decimales (TT)</h3></label>
-            <input name="V5"type="number">
+            <label><h3>Ingresos de Venta 5 sin decimales (TT)</h3></label>
+            <input name="V5"type="number" id="V5">
+            <br>
+            <br>
+            <br>
+            <input type="button" name="send"  onclick="return cantifinal()" value="Calcular">
+            <input type="button" name="borrar" value="Borrar Datos" onclick="return borrard()">
+            <br>
+            <br>
+            <br>
+            <label><h2>Total: </h2></label>
+            <input type="number" name="total" id="totalc" readonly="readonly" 
+                        class="input_text">  
         </form>
     </div>
+    <script src="./JS/validacion.js"></script>
 </body>
 </html>

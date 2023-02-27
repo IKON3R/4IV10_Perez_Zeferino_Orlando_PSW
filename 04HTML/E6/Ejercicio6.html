@@ -12,5 +12,44 @@
             Realiza un algoritmo que calcule la edad de una persona
         </h4>
     </div>
+    <div class="container">
+        <form method="get" name = "formulario" action="">
+            <br>
+            <label>
+                <h2 align="center">PROBLEMA 6</h2>
+            </label>
+            <div class="tabla-container">
+                <form nombre="formulario" method="get"
+                onsubmit="return validar(this)">
+                    <br>
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha"
+                    id="miento" required>
+                    <br><br>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="enviar" value="Calcular Edad"
+                            onclick="return fechavalidar()"></td>
+                    </tr>
+                    <br><br>
+
+                    <td>
+                        Su edad actual es:
+                    </td>
+                    <td>
+                        <input type="text" name="fechaf" id="mientof" readonly="readonly" 
+                        class="input_text">
+                    </td>
+                    <br><br>
+
+                    <input type="reset" name="borrar"
+                    value="Borrar Datos">   
+                </form>
+                <table id="tabla" class="tablai">
+                </table>
+        </form>
+    </div>
+    <script src="./JS/validacion.js"></script>
 </body>
 </html>
