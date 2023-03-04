@@ -1,0 +1,121 @@
+/* Selecciona el elemento body y aplica un color de fondo */
+body {
+    background-color: #f5f5f5;
+    }
+    
+    /* Establece las reglas de estilo para el encabezado h1 */
+    h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    text-align: center;
+    }
+    
+    /* Establece las reglas de estilo para el encabezado h2 */
+    h2 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    }
+    
+    /* Establece las reglas de estilo para la tabla de amortización */
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    
+    /* Establece las reglas de estilo para los encabezados de tabla */
+    th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    }
+    
+    /* Establece las reglas de estilo para las celdas de tabla */
+    td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    }
+    
+    /* Establece las reglas de estilo para el botón Calcular Amortización */
+    #calcular {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    }
+    
+    /* Establece las reglas de estilo para el botón Vaciar */
+    #vaciar {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    }
+    
+    /* Establece las reglas de estilo para los contenedores de la página */
+    .main-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+    }
+    
+    .back-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    /* Establece las reglas de estilo para el pie de página */
+    footer {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    }
+    
+    /* Establece las reglas de estilo para el cuadro de entrada */
+    input[type="text"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Establece las reglas de estilo para el cuadro de selección */
+    select {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Establece las reglas de estilo para el encabezado */
+    header {
+    margin-bottom: 40px;
+    }
+    
+    /* Establece las reglas de estilo para la tabla de valores de selección */
+    .select-values {
+    max-height: 200px;
+    }
+    .tituloxd{
+        background-color: mediumspringgreen;
+        border-color: darkseagreen;
+        border-radius: 70px;
+        border-style: double;
+
+    }

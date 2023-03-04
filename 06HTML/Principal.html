@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Primer Departamental</title>
+  </head>
+
+  <body>
+    <div class="back-container">
+      <footer><a href="../index.html">Regresar al menu</a></footer>
+    </div>
+    <div class="main-container">
+      <header>
+        <div class="tituloxd" name="nombredebanco" id="tnb"><h1>BancomemosTuDinero</h1></div>
+        <nav>
+          <h2>
+            Interes compuesto para invertir capital en un terreno en la Playa.
+          </h2>
+        </nav>
+      </header>
+      <form method="get" name="input">
+        <label><h3>En la cantidad de:</h3></label>
+        <input
+          type="text"
+          id="dinero"
+          placeholder="Capital a Invertir"
+          onkeypress="return inputN(event)"/>
+        <br>
+        <label><h3>Con un numero de 96% anual por:</h3></label><br>
+        <select name="años" id="anios">
+          <div class="select-values">
+            <option value="1" selected>1 año</option>
+            <option value="2">2 años</option>
+            <option value="3">3 años</option>
+            <option value="4">4 años</option>
+            <option value="5">5 años</option>
+            <option value="6">6 años</option>
+            <option value="7">7 años</option>
+            <option value="8">8 años</option>
+            <option value="9">9 años</option>
+            <option value="10">10 años</option>
+            <option value="11">11 años</option>
+            <option value="12">12 años</option>
+            <option value="13">13 años</option>
+            <option value="14">14 años</option>
+            <option value="15">15 años</option>
+            <option value="16">16 años</option>
+            <option value="17">17 años</option>
+            <option value="18">18 años</option>
+            <option value="19">19 años</option>
+            <option value="20">20 años</option>
+            <option value="21">21 años</option>
+            <option value="22">22 años</option>
+            <option value="23">23 años</option>
+            <option value="24">24 años</option>
+            <option value="25">25 años</option>
+            <option value="26">26 años</option>
+            <option value="27">27 años</option>
+            <option value="28">28 años</option>
+            <option value="29">29 años</option>
+            <option value="30">30 años</option>
+            <option value="31">31 años</option>
+            <option value="32">32 años</option>
+            <option value="33">33 años</option>
+            <option value="34">34 años</option>
+            <option value="35">35 años</option>
+            <option value="36">36 años</option>
+          </div>
+        </select>
+        <br>
+        <br>
+        <input
+          type="button"
+          value="Calcular Amortización"
+          id="calc"
+          onclick="return examenF()"/>
+        <input
+          type="button"
+          value="Vaciar"
+          id="vaciocomosuspromesas"
+          onclick="return borrar()"/>
+        <br>
+        <br>
+        <div class="amortization-table">
+          <table>
+            <thead>
+              <tr><h5>
+                <th>Num. Pago</th>
+                <th>Prestamo</th>
+                <th>Intereses</th>
+                <th>Abono del capital</th>
+                <th>Cuota</th>
+                <th>Saldo Final</th>
+              </h5></tr>
+            </thead>
+            <tbody id="table">
+              <tr>
+                <td><pre id="noPago"></pre></td>
+                <td><pre id="prestamo"></pre></td>
+                <td><pre id="interes"></pre></td>
+                <td><pre id="pago"></pre></td>
+                <td><pre id="cuota"></pre></td>
+                <td><pre id="restante"></pre></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Total</td>
+                <td><pre id="totalIntereses"></pre></td>
+                <td><pre id="totalPago"></pre></td>
+                <td><pre id="totalCuota"></pre></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+      </form>
+    </div>
+    <script src="./JS/interes.js"></script>
+  </body>
+</html>
